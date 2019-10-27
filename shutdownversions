@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+"""
+Removes all files and cleans out all directories created by the versioning file system.
+Author: Jacob Zaidi
+"""
+
+import os
+import sys
+
+def main():
+    os.system("fusermount -u mount")
+    os.system("rm -r .versiondir")
+
+if __name__ == '__main__':
+    main()

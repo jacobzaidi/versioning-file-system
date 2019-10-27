@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+"""
+Lists the versions of the file called [filename].
+Author: Jacob Zaidi
+"""
+
+import os
+import sys
+
+def main(filename):
+    for i in range(1, 7):
+	if os.path.exists(".versiondir/" + filename + "." + str(i)):
+		print filename + "." + str(i)
+
+if __name__ == '__main__':
+    main(sys.argv[1])

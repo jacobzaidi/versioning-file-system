@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+"""
+Make the [version] the current version of the file [filename].
+Author: Jacob Zaidi
+"""
+
+import os
+import sys
+
+def mkfile(filename, body=None):
+	filename = ".versiondir/" + filename
+	#filename = os.path,join('/.versiondir', filename)
+	with open(filename, 'w') as f:
+		f.write(body or filename)
+	return
+
+def main(filename, version):
+	f = open(".versiondir/" + filename + "." + str(version), "r")
+	if os.path.exists(".versiondir/" + filename + ".6"):
+		os.remove(".versiondir/"+filename+".6")
+	for i in range(5, 0, -1):
+		if os.path.exists(".versiondir/" + filename + "."+str(i)):
+			os.rename(".versiondir/"+filename+"."+str(i),".versiondir/"+filename+"."+str(i+1))
+	mkfile(filename + ".1", f.read())
+
+if __name__ == '__main__':
+    main(sys.argv[1], sys.argv[2])
