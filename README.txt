@@ -1,6 +1,6 @@
 By Jacob Zaidi.
 
-This program must be run from the command line with a Linux distribution.
+This program must be run from the command line with a Linux distribution. It implements a user space file system which automatically keeps multiple versions of files, and implements tools to work with the file versions.
 
 The following command creates a directory called .versiondir. Any files created in mount will be created in .versiondir.
 python versionfs.py mount 
