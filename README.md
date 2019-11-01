@@ -8,25 +8,25 @@ You may use either the Python or Bash folder to use the code.
 
 1. You will need two terminal windows open: one to run the user space file system and display the output, and one to work with files from the command line.
 
-2. In terminal one create a directory called mount. Then run the program: python versionfs.py mount.
+2. In terminal one create a directory called mount. Then run the program: `python versionfs.py mount`.
 
 3. From here on all commands should be executed in terminal two.
 
 ## What functions can I call 
 
-* listversions filename
+* `listversions filename` lists the versions of the file called `filename`.
 
-* mkcurrent filename version#
+* `mkcurrent filename version#` makes `version#` the current version of the file `filename`.
 
-* catversion filename version#
+* `catversion filename version#` displays the contents of the version `version#` of the file `filename` on the screen.
  
-* rmversions filename
+* `rmversions filename` permanently removes all versions except the current version of file `filename`.
 
-* shutdownversions
+* `shutdownversions` removes all files and cleans out all directories created by the versioning file system.
 
 ## Credits
 
-* fuse.py originally came from https://github.com/fusepy/fusepy
+* `fuse.py` originally came from [fuse.py](https://github.com/fusepy/fusepy)
 
-* versionfs.py is based on passthrough.py from https://github.com/skorokithakis/pythonfuse-sample
+* `versionfs.py` is based on [passthrough.py](https://github.com/skorokithakis/pythonfuse-sample)
 
