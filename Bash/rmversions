@@ -1,0 +1,10 @@
+#!/bin/bash
+# Saqib Zaidi Sahib
+# ssah933
+# 222479856
+
+if [ "$1" != "" ]; then
+    for i in {2..6}; do
+        rm -f .versiondir/$1.$i
+    done    
+fi

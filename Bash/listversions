@@ -1,0 +1,14 @@
+#!/bin/bash
+# Saqib Zaidi Sahib
+# ssah933
+# 222479856
+
+if [ "$1" != "" ]; then
+    for i in {1..6}; do
+        if [ -e ".versiondir/$1.$i" ]; then
+            echo "$1.$i"
+        fi
+    done    
+fi
+
+

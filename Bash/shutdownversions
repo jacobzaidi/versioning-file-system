@@ -1,0 +1,7 @@
+#!/bin/bash
+# Saqib Zaidi Sahib
+# ssah933
+# 222479856
+
+fusermount -u mount
+rm -r .versiondir

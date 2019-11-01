@@ -1,0 +1,8 @@
+#!/bin/bash
+# Saqib Zaidi Sahib
+# ssah933
+# 222479856
+
+if [ "$1" != "" ] && [ "$2" != "" ]; then
+    cat ".versiondir/$1.$2"
+fi
