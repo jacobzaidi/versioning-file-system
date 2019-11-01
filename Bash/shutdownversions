@@ -1,7 +1,6 @@
 #!/bin/bash
-# Saqib Zaidi Sahib
-# ssah933
-# 222479856
+# Jacob Zaidi
+# Removes all files and cleans out all directories created by the versioning file system.
 
 fusermount -u mount
 rm -r .versiondir
